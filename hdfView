@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export NUC3D_DIR="$(cd $(dirname "$0"); pwd)"
+export PYTHONPATH=".:${NUC3D_DIR}"
+
+python ${NUC3D_DIR}/gui/HdfViewer.py $*

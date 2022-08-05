@@ -1,0 +1,25 @@
+* Parallel MPI Engine *
+* http://mpi4py.scipy.org/
+
+* Timeouts generally
+* Test apps
+- Calc density
+- Calc models
+
++ Setup queues properly
+- More jobs than cores
+! Extra jobs are skipped at present
+- Possibly inhomogeneous
+- Concept of free slots
+- Engine can poll Controller for status
+
++ Non-waiting callback function
+* Test when Worker and Controller processes killed
+
+? Asynchromous recieve - not much gain
+? MPI alternative to discrete pings?
+? Remote Workers
+
+
+MPI recv 100% cpu
+--mca mpi_yield_when_idle 1

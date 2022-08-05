@@ -1,0 +1,13 @@
+#!/bin/sh
+
+export NUC3D_DIR="$(cd $(dirname "$0"); pwd)"
+export PYTHONPATH="${PYTHONPATH}:.:${NUC3D_DIR}"
+
+if [ `uname` = "Darwin" ]
+then
+    pythonw ${NUC3D_DIR}/nuc3d.py $*
+else
+    python ${NUC3D_DIR}/nuc3d.py $*
+
+fi
+
